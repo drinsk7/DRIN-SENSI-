@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRIN SENSI | Gerador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <img src="assets/drin-sensi-logo.png" alt="Drin Sensi">
+  <span>PAINEL DE SENSIBILIDADE</span>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="etiqueta">✦ PAINEL GAMER</p>
+    <h1>DRIN <span>SENSI</span></h1>
+    <p>Configure sua sensibilidade e encontre seu próprio estilo de jogo.</p>
+    <a href="#gerador" class="botao">ABRIR GERADOR ↓</a>
+  </section>
+
+  <section class="painel" id="gerador">
+    <h2>GERADOR DE <span>SENSI</span></h2>
+    <p>Escolha o celular e o modo desejado.</p>
+
+    <label for="celular">Modelo do celular</label>
+    <select id="celular">
+      <option value="Samsung">Samsung</option>
+      <option value="Xiaomi">Xiaomi / Redmi / POCO</option>
+      <option value="Motorola">Motorola</option>
+      <option value="iPhone">iPhone / iOS</option>
+      <option value="OPPO">OPPO / Realme</option>
+      <option value="ASUS">ASUS</option>
+      <option value="Outro">Outro Android</option>
+    </select>
+
+    <label for="modelo">Nome do aparelho (opcional)</label>
+    <input id="modelo" type="text" placeholder="Ex.: Galaxy A15">
+
+    <label for="modo">Estilo de jogo</label>
+    <select id="modo">
+      <option value="BR">BR — Equilibrada</option>
+      <option value="AP">AP — Puxada rápida</option>
+      <option value="CS">CS — Controle</option>
+      <option value="RUSH">RUSH — Movimentação rápida</option>
+    </select>
+
+    <label for="potencia">Desempenho do celular</label>
+    <select id="potencia">
+      <option value="1">Básico</option>
+      <option value="2" selected>Médio</option>
+      <option value="3">Potente</option>
+    </select>
+
+    <button class="botao gerar" id="gerar">✦ GERAR MINHA SENSI</button>
+
+    <div class="resultado">
+      <h3 id="tituloResultado">SUA CONFIGURAÇÃO</h3>
+      <p id="descricao">As sugestões aparecerão aqui.</p>
+
+      <div class="valores">
+        <div><small>GERAL</small><strong id="geral">--</strong></div>
+        <div><small>PONTO VERMELHO</small><strong id="vermelho">--</strong></div>
+        <div><small>MIRA 2X</small><strong id="mira2">--</strong></div>
+        <div><small>MIRA 4X</small><strong id="mira4">--</strong></div>
+        <div><small>MIRA AWM</small><strong id="awm">--</strong></div>
+        <div><small>OLHADINHA</small><strong id="olhadinha">--</strong></div>
+        <div><small>DPI SUGERIDO</small><strong id="dpi">--</strong></div>
+        <div><small>BOTÃO DE ATIRAR</small><strong id="atirar">--</strong></div>
+      </div>
+
+      <button class="botao copiar" id="copiar">COPIAR CONFIGURAÇÃO</button>
+      <p id="mensagem"></p>
+    </div>
+  </section>
+
+  <section class="aviso">
+    <h2>COMO USAR</h2>
+    <p>Gere os valores, teste no treinamento do jogo e faça pequenos ajustes de acordo com sua preferência.</p>
+    <p>Este site oferece sugestões; não modifica o jogo nem garante resultados específicos.</p>
+  </section>
+</main>
+
+<footer>DRIN SENSI © 2026 — PAINEL GAMER</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
